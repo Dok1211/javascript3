@@ -5,5 +5,38 @@
         <title>Todo</title>
     </head>
     <body>
+        <h1>
+            ToDoリスト
+        </h1>
+        <label for="all">
+            <input type="radio" name="status" id="all" checked>すべて
+        </label>
+        <label for="working">
+            <input type="radio" name="status" id="working">作業中
+        </label>
+        <label for="finished">
+            <input type="radio" name="status" id="finished">完了
+        </label>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>コメント</th>
+                    <th>状態</th>
+                </tr>
+            </thead>
+            <tbody id="todoList">
+            </tbody>
+        </table>
+        <h1>
+            新規タスクの追加
+        </h1>
+        <label for="taskText">
+            <input type="text" id="taskText">
+        </label>
+        <label for="addTaskButton">
+            <input type="submit" id="addTaskButton" value="追加">
+        </label>
+        <script src="todo.js"></script>
     </body>
 </html>
